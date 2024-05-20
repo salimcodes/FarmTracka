@@ -17,12 +17,10 @@ y = data.iloc[:, -1]   # Target (plant growth status)
 label_encoder = LabelEncoder()
 y_encoded = label_encoder.fit_transform(y)
 
-# Model Training with XGBoost
-import xgboost as xgb
+# Model Training with Random Forest Classifier
+from sklearn.ensemble import RandomForestClassifier
 
-# Initialize the model
-model = xgb.XGBClassifier()
-
+model = RandomForestClassifier(random_state=42)
 # Train the model
 model.fit(X, y_encoded)
 
