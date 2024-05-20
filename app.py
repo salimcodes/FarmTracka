@@ -17,11 +17,11 @@ y = data.iloc[:, -1]   # Target (plant growth status)
 label_encoder = LabelEncoder()
 y_encoded = label_encoder.fit_transform(y)
 
+# Model Training with XGBoost
+import xgboost as xgb
 
-from sklearn.linear_model import LogisticRegression
-
-# Initialize the Logistic Regression classifier
-model = LogisticRegression(max_iter=200, random_state=42)
+# Initialize the model
+model = xgb.XGBClassifier()
 
 # Train the model
 model.fit(X, y_encoded)
@@ -31,11 +31,11 @@ import streamlit as st
 import replicate
 import os
 
-def run_arctic_instruct(prompt, temperature):
+def run_arctic_instruct(prompt, temperature, replicate_api_token):
   """Fetches response from Snowflake Arctic Instruct using Replicate API"""
   try:
-    # Get API token from environment variable 
-    replicate_api_token = os.environ.get("REPLICATE_API_TOKEN")
+    # Get API token from environment variable (replace with your actual variable name)
+    replicate_api_token = replicate_api_token
     if not replicate_api_token:
       st.error("REPLICATE_API_TOKEN environment variable not set!")
       return
@@ -64,7 +64,7 @@ def main():
     light_intensity = st.number_input("Light Intensity", min_value=0, max_value=15000, step=1)
     temperature = st.number_input("Temperature", min_value=0, max_value=50, step=1)
     humidity = st.number_input("Humidity", min_value=0, max_value=100, step=1)
-    
+    api_key = st.text_input("Enter API Key")
 
     # Make prediction
     if st.button('Predict Plant Status and Advice the Farmer'):
@@ -77,7 +77,7 @@ def main():
     
         prompt_text = "As an agriculturist, give advice to an African farmer on how to deal with a " + predicted_status + " plant."
         temperature = 0.8
-        response = run_arctic_instruct(prompt_text, temperature)
+        response = run_arctic_instruct(prompt_text, temperature, api_key)
         full_response = st.write_stream(response)
 
 
