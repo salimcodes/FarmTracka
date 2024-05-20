@@ -8,6 +8,7 @@ data = pd.read_excel("data.xlsx")
 # Handle missing values if any
 data.dropna(inplace=True)
 
+
 # Split data into features and target
 X = data.iloc[:, :-1]  # Features (light intensity, temperature, humidity)
 y = data.iloc[:, -1]   # Target (plant growth status)
