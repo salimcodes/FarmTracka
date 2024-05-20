@@ -34,7 +34,7 @@ import os
 def run_arctic_instruct(prompt, temperature):
   """Fetches response from Snowflake Arctic Instruct using Replicate API"""
   try:
-    # Get API token from environment variable (replace with your actual variable name)
+    # Get API token from environment variable 
     replicate_api_token = os.environ.get("REPLICATE_API_TOKEN")
     if not replicate_api_token:
       st.error("REPLICATE_API_TOKEN environment variable not set!")
