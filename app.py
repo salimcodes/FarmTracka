@@ -17,10 +17,12 @@ y = data.iloc[:, -1]   # Target (plant growth status)
 label_encoder = LabelEncoder()
 y_encoded = label_encoder.fit_transform(y)
 
-# Model Training with Random Forest Classifier
-from sklearn.ensemble import RandomForestClassifier
 
-model = RandomForestClassifier(random_state=42)
+from sklearn.linear_model import LogisticRegression
+
+# Initialize the Logistic Regression classifier
+model = LogisticRegression(max_iter=200, random_state=42)
+
 # Train the model
 model.fit(X, y_encoded)
 
