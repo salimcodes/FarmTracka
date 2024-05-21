@@ -56,10 +56,10 @@ def run_arctic_instruct(prompt, temperature, replicate_api_token):
 
 # Define the Streamlit app
 def main():
-    st.title("AgriTracka")
+    st.title("FarmTracka")
     st.subheader("Your Farm's Digital Guardian")
     st.markdown("""
-        Welcome to AgriTracka! Please input the light intensity, temperature, and humidity levels of your farm's environment. 
+        Welcome to FarmTracka! Please input the light intensity, temperature, and humidity levels of your farm's environment. 
        Provide your Snowflake Arctic Instruct API key to get personalized advice for maintaining your plant.
         """)    
     # Input fields for user
