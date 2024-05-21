@@ -1,6 +1,6 @@
-# AgriTracka: Your Farm's Digital Guardian
+# FarmTracka: Your Farm's Digital Guardian
 
-AgriTracka is an intelligent web application designed to help farmers monitor the health of their plants based on environmental conditions such as light intensity, temperature, and humidity. Using machine learning and AI-powered advice, AgriTracka provides predictions on plant status and offers personalized advice to maintain plant health.
+FarmTracka is an intelligent web application designed to help farmers monitor the health of their plants based on environmental conditions such as light intensity, temperature, and humidity. Using machine learning and AI-powered advice, FarmTracka provides predictions on plant status and offers AI-enabled personalized advice to maintain plant health.
 
 ## Table of Contents
 
@@ -19,8 +19,8 @@ Before you begin, ensure you have Python 3.7+ installed. Follow these steps to s
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/agritracka.git
-    cd agritracka
+    git clone https://github.com/yourusername/farmtracka.git
+    cd farmtracka
     ```
 
 2. Create and activate a virtual environment:
@@ -45,9 +45,9 @@ To prepare the data for training, follow these steps:
 
 ## Model Training
 
-Train the model using the XGBoost classifier:
+The model underneath was trained using the RandomForest classifier:
 
-1. Initialize the XGBoost model.
+1. Initialize the RandomForest Classifier model.
 2. Train the model on the prepared dataset.
 
 ## Streamlit App Development
@@ -78,10 +78,10 @@ This command starts the Streamlit server and opens the app in your default web b
 
 ## Acknowledgements
 
-- The machine learning model was trained using the XGBoost library.
+- The machine learning model was trained using the RandomForest Classifier.
 - The app fetches advice using the Snowflake Arctic Instruct via the Replicate API.
 - Special thanks to the open-source community for providing the tools and resources used in this project.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://opensource.org/license/mit) file for more details.
