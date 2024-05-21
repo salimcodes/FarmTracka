@@ -11,6 +11,7 @@ Up to 40% of farmers in Nigeria lose their crops due to preventable factors. Far
 - [Streamlit App Development](#streamlit-app-development)
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
+- [Hardware](#hardware)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
@@ -69,6 +70,21 @@ streamlit run app.py
 ```
 
 This command starts the Streamlit server and opens the app in your default web browser.
+
+## Hardware
+
+- For Humidity:
+  
+![image](https://github.com/salimcodes/FarmTracka/assets/64667212/f5470969-325a-4fd3-9f38-570224d363db)
+
+- For Light Intensity:
+
+![image](https://github.com/salimcodes/FarmTracka/assets/64667212/499b8f39-d562-4586-a197-91a4d2dc44fc)
+
+- For Temperature
+
+  ![image](https://github.com/salimcodes/FarmTracka/assets/64667212/1a052236-00e5-4558-9cfd-6f42eaac4613)
+
 
 ## Usage
 
