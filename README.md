@@ -1,6 +1,7 @@
 # FarmTracka: Your Farm's Digital Guardian
 
-FarmTracka is an intelligent web application designed to help farmers monitor the health of their plants based on environmental conditions such as light intensity, temperature, and humidity. Using machine learning and AI-powered advice, FarmTracka provides predictions on plant status and offers AI-enabled personalized advice to maintain plant health.
+
+Up to 40% of farmers in Nigeria lose their crops due to preventable factors. FarmTracka is an intelligent web application designed to help farmers monitor the health of their plants based on environmental conditions such as light intensity, temperature, and humidity. Using machine learning and AI-powered advice, FarmTracka provides predictions on plant status and offers AI-enabled personalized advice to maintain plant health.
 
 ## Table of Contents
 
