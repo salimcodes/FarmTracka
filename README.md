@@ -81,7 +81,7 @@ This command starts the Streamlit server and opens the app in your default web b
 
 ![image](https://github.com/salimcodes/FarmTracka/assets/64667212/499b8f39-d562-4586-a197-91a4d2dc44fc)
 
-- For Temperature
+- For Temperature:
 
   ![image](https://github.com/salimcodes/FarmTracka/assets/64667212/1a052236-00e5-4558-9cfd-6f42eaac4613)
 
